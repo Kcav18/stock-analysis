@@ -14,7 +14,7 @@ My original analysis code has been updated (also referred to as refactored) so t
 
 ## Results
 
-To view the spreadsheet that includes the refactored code, click here: 
+To view the spreadsheet that includes the refactored code, click here: [VBA_Challenge](https://github.com/Kcav18/stock-analysis/blob/main/VBA_Challenge.xlsm)
 
 In the updated / refactored version of the Green Stocks Analysis code, I created a loop that loops through the data one time and collects all the information. A ticker index variable was created to access the correct index across four different arrays. Three of these arrays are new in the refactored code. Those new output arrays are tickerVolumes, tickerStartingPrices, and ticketEndingPrices. The refactored code also includes the formatting in the analysis rather than having it as a second sub procedure as I had in the original code.
 
@@ -310,33 +310,32 @@ Cells.Clear
 
 End Sub
 ```
-As you can see, the code is a bit different! Even with its differences though, it does not change the actual content or formatting of the data. A comparison of the data output and formatting are shown below:
+As shown above, the code is a bit different! Even with its differences though, it does not change the actual content or conditional formatting of the data. A comparison of the data output and formatting before and after refactoring are shown below:
 
-2017 Original Data Output and Formatting
-![2017 SockAnalysisData Original](resources/2017_StockAnalysisData_Original.png)
+| 2017 Original Data Output and Formatting        |        2017 Refactored Data Output and Formatting |
+| -------------                                   |        -------------                              | 
+![2017 SockAnalysisData Original](https://github.com/Kcav18/stock-analysis/blob/main/Resources/2017_SockAnalysisData_Original.png) | ![2017 StockAnalysisData Refactored](https://github.com/Kcav18/stock-analysis/blob/main/Resources/2017_SockAnalysisData_Refactored.png) |
 
-2017 Refactored Data Output and Formatting
-![2017 SockAnalysisData Refactored](resources/2017_StockAnalysisData_Refactored.png)
 
-2018 Original Data Output and Formatting
-![2018 SockAnalysisData Original](resources/2018_StockAnalysisData_Original.png)
+| 2018 Original Data Output and Formatting        |        2018 Refactored Data Output and Formatting |
+| -------------                                   |        -------------                              | 
+![2018 SockAnalysisData Original](https://github.com/Kcav18/stock-analysis/blob/main/Resources/2018_SockAnalysisData_Original.png) | ![2018 StockAnalysisData Refactored](https://github.com/Kcav18/stock-analysis/blob/main/Resources/2018_SockAnalysisData_Refactored.png) |
 
-2018 Refactored Data Output and Formatting
-![2018 SockAnalysisData Refactored](resources/2018_StockAnalysisData_Refactored.png)
 
-From the images above, it is obvious that the code did not change the output or formatting but it did change the speed in which the code ran. That information is captured below.
 
-2017 Time with Original Code:
-![2017_Timer_Original](https://user-images.githubusercontent.com/112278208/190231676-0f05ee9c-7ac2-40e2-b183-78815dbade69.png)
+From the images above, it is obvious that the code did not change the output or the conditional formatting on the returns column. The only difference is in the headings on the original charts. That was because I was intentionally "playing" with some additional formatting code. :)
 
-2017 Time with Refactored Code:
-![2017_Timer_Refactored](https://user-images.githubusercontent.com/112278208/190231718-5846027a-cc67-4dc2-957a-840073173cfa.png)
+Another thing that really stands out from the data output graphics above is that Steve's parents really should investigate other stock options ...These stocks did great overall in 2017 but completely tanked in 2018. I would be very hesitant about putting any money there! Hopefully this refactored code will help Steve and his parents analyze some better stock options...and the new code will analyze the data much faster than the original code! See the timing results below:
 
-2018 Time with Original Code:
-![2018_Timer_original](https://user-images.githubusercontent.com/112278208/190231768-ee031a59-5806-4e11-b0c7-d3d6e1207387.png)
+| 2017 Time with Original Code | 2017 Time with Refactored Code |
+| -------------                |        -------------           | 
+![2017 SockAnalysisData Original Timer](https://github.com/Kcav18/stock-analysis/blob/main/Resources/2017_Timer_Original.png) | ![2017 StockAnalysisData Refactored Timer](https://github.com/Kcav18/stock-analysis/blob/main/Resources/2017_Timer_Refactored.png) |
 
-2018 Time with Refactored Code:
-![2018_Timer_Refactored](https://user-images.githubusercontent.com/112278208/190231787-30ea82d8-ecfd-4e71-87a8-186c9ca639c6.png)
+| 2018 Time with Original Code | 2018 Time with Refactored Code |
+| -------------                |        -------------           | 
+![2018 SockAnalysisData Original Timer](https://github.com/Kcav18/stock-analysis/blob/main/Resources/2018_Timer_original.png) | ![2018 StockAnalysisData Refactored Timer](https://github.com/Kcav18/stock-analysis/blob/main/Resources/2018_Timer_Refactored.png) |
+
+The timers above show that on average, the code will run 82% faster with the refactoring. That will be a huge deal with a larger dataset! 
 
 ## Summary
 
