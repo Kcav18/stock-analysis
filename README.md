@@ -325,7 +325,7 @@ As shown above, the code is a bit different! Even with its differences though, i
 
 From the images above, it is obvious that the code did not change the output or the conditional formatting on the returns column. The only difference is in the headings on the original charts. That was because I was intentionally "playing" with some additional formatting code. :)
 
-Another thing that really stands out from the data output graphics above is that Steve's parents really should investigate other stock options ...These stocks did great overall in 2017 but completely tanked in 2018. I would be very hesitant about putting any money there! Hopefully this refactored code will help Steve and his parents analyze some better stock options...and the new code will analyze the data much faster than the original code! See the timing results below:
+Another thing that really stands out from the data output graphics above is that Steve's parents really should investigate other stock options ...These stocks did great overall in 2017 but most completely tanked in 2018. I would be very hesitant about putting money in most of those options! The only two that I would take a second look at are tickers ENPH and RUN. Further research of other stock options is still recommended though! Hopefully this refactored code will help Steve and his parents analyze some better stock options...and the new code will analyze the data much faster than the original code! See the timing results below:
 
 | 2017 Time with Original Code | 2017 Time with Refactored Code |
 | -------------                |        -------------           | 
@@ -335,7 +335,9 @@ Another thing that really stands out from the data output graphics above is that
 | -------------                |        -------------           | 
 ![2018 SockAnalysisData Original Timer](https://github.com/Kcav18/stock-analysis/blob/main/Resources/2018_Timer_original.png) | ![2018 StockAnalysisData Refactored Timer](https://github.com/Kcav18/stock-analysis/blob/main/Resources/2018_Timer_Refactored.png) |
 
-The timers above show that on average, the code will run 82% faster with the refactoring. That will be a huge deal with a larger dataset! 
+The timers above show that on average, the code will run 82% faster with the refactoring! That will be a huge deal with a larger dataset! 
+
+I will be happy to complete further analysis once you provide me with more options. Otherwise, feel free to share this code with your next Data Analyst - it should help them get a jumpstart on your analysis.
 
 ## Summary
 
