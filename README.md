@@ -345,7 +345,7 @@ I will be happy to complete further analysis once you provide me with more optio
 
 There are several advantages to refactoring code. Some of those are as follows:
 
-- Refactoring can make the code easier to understand for the original developr and for anyone else that needs to view the code later on.
+- Refactoring can make the code easier to understand for the original developer and for anyone else that needs to view the code later on.
 - Refactoring can make the code run much faster.
 - Efficiency: can make the code run in fewer steps and uses less memory.
 
